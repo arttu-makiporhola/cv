@@ -83,7 +83,7 @@ export default function ProjectsCard() {
                 </div>
                 <div className='break-inside-avoid'>
                     <GitHubRepoItem
-                        lastUpdated={new Date('Jan 24, 2025')}
+                        lastUpdated={new Date(process.env.NEXT_PUBLIC_BUILD_TIME || '')}
                         title="arttu-makiporhola/cv"
                         url="https://github.com/arttu-makiporhola/cv"
                         license="MIT License"

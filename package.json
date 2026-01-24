@@ -1,8 +1,8 @@
 {
-  "name": "arttum",
-  "version": "0.1.0",
+  "name": "cv",
+  "version": "1.0.0",
   "private": true,
-  "description": "Modern, minimal Next.js static site with theme and language switching",
+  "description": "A simple CV / Online Resume built with Next.js, TypeScript, and Tailwind CSS.",
   "keywords": [
     "portfolio",
     "next.js",
@@ -10,7 +10,11 @@
     "typescript",
     "tailwind",
     "multilingual",
-    "theme-toggle"
+    "theme toggle",
+    "dark mode",
+    "static site",
+    "web development",
+    "cv"
   ],
   "scripts": {
     "dev": "next dev",

@@ -13,11 +13,11 @@ const nextConfig: NextConfig = {
   },
   reactStrictMode: true,
   poweredByHeader: false,
-  // Additional optimizations
-  compress: true, // Enable gzip compression
-  productionBrowserSourceMaps: false, // Disable source maps in production for smaller bundles
-  // Security headers for static export (note: middleware won't run in static export)
-  // These will need to be configured at your hosting provider level
+  compress: true,
+  productionBrowserSourceMaps: true, // Enable source maps in production too
+  env: {
+    NEXT_PUBLIC_BUILD_TIME: new Date().toISOString(),
+  },
 };
 
 export default nextConfig;

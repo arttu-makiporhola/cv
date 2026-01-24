@@ -10,8 +10,8 @@ export const siteConfig = {
   },
   
   metadata: {
-    title: 'Arttu Mäkipörhölä - Online Resume / CV',
-    description: 'Modern multilingual portfolio / CV.',    
+    title: 'Arttu Mäkipörhölä - CV / Online Resume',
+    description: 'A simple CV / Online Resume built with Next.js, TypeScript, and Tailwind CSS.',
     keywords: [
       'portfolio',
       'next.js',
@@ -28,10 +28,11 @@ export const siteConfig = {
     ] as string[],
     author: 'Arttu Mäkipörhölä',
     ogImage: {
-      url: '/og-image.png',
+      type: 'image/webp',
+      url: '/og-image.webp',
       width: 1200,
       height: 630,
-      alt: 'Arttu Mäkipörhölä - Online Resume / CV',
+      alt: 'Arttu Mäkipörhölä - CV / Online Resume',
     },
   },
 };

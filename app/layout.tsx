@@ -12,7 +12,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: {
     default: siteConfig.metadata.title,
-    template: '%s | Arttu Mäkipörhölä - Online Resume / CV',
+    template: '%s | Arttu Mäkipörhölä - CV / Online Resume',
   },
   description: siteConfig.metadata.description + ' (' + siteConfig.metadata.keywords.join(', ') + ')',
   keywords: siteConfig.metadata.keywords,
@@ -30,13 +30,14 @@ export const metadata: Metadata = {
     url: siteConfig.basePath || '/',
     title: siteConfig.metadata.title,
     description: siteConfig.metadata.description,
-    siteName: 'Arttu Mäkipörhölä - Online Resume / CV',
+    siteName: 'Arttu Mäkipörhölä - CV / Online Resume',
     images: [
       {
         url: siteConfig.metadata.ogImage.url,
         width: siteConfig.metadata.ogImage.width,
         height: siteConfig.metadata.ogImage.height,
         alt: siteConfig.metadata.ogImage.alt,
+        type: siteConfig.metadata.ogImage.type,
       },
     ],
   },
