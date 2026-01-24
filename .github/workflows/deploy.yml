@@ -1,0 +1,64 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    tags:
+      - '[0-9]+\.[0-9]+\.[0-9]+'
+  workflow_dispatch:
+
+concurrency:
+  group: pages-${{ github.repository }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 5
+
+    steps:
+      # fetch
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      # compute url automatically
+      - id: pages
+        uses: actions/configure-pages@v5
+      - id: compute-public-urls
+        run: |
+          # Use the base_url from the 'pages' step (this handles custom domains)
+          echo "NEXT_PUBLIC_SITE_URL=${{ steps.pages.outputs.base_url }}" >> $GITHUB_ENV
+          
+          # Use the base_path from the 'pages' step (this handles sub-paths vs root)
+          echo "NEXT_PUBLIC_BASE_PATH=${{ steps.pages.outputs.base_path }}" >> $GITHUB_ENV
+
+      # build
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run build
+        env:
+          NEXT_PUBLIC_SITE_URL: ${{ env.NEXT_PUBLIC_SITE_URL }}
+          NEXT_PUBLIC_BASE_PATH: ${{ env.NEXT_PUBLIC_BASE_PATH }}
+
+      # push
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}

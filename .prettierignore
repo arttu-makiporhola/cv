@@ -1,0 +1,27 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Production
+build
+dist
+.next
+out
+
+# Misc
+.DS_Store
+*.log
+*.swp
+
+# Env files
+.env
+.env.local
+.env.production.local
+
+# Testing
+coverage
+
+# Cache
+.turbo
+.vercel
