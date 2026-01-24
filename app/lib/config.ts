@@ -11,7 +11,7 @@ export const siteConfig = {
 
     metadata: {
         title: 'Arttu Mäkipörhölä - CV / Online Resume',
-        description: 'A simple CV / Online Resume built with Next.js, TypeScript, and Tailwind CSS.',
+        description: 'A simple CV / Online Resume built with Next.js and hosted on Github Pages.',
         keywords: ['portfolio', 'next.js', 'react', 'typescript', 'tailwind', 'multilingual', 'theme toggle', 'dark mode', 'static site', 'web development', 'cv', 'resume'] as string[],
         author: 'Arttu Mäkipörhölä',
         ogImage: {

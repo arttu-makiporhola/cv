@@ -110,7 +110,6 @@ export default function ProfileCard() {
                 <BrandCard title='Java' href='https://www.java.com/' foreground='#000' background='#F89820' icon={<Image title='Java logo' src='brands/java.com.webp' alt='' width={40} height={40} />} />
                 <span className='hidden print:inline mr-1'>, </span>
                 <BrandCard title='LUA' href='https://www.lua.org/' foreground='#fff' background='#1A3FA2' icon={<Image title='LUA logo' src='brands/lua.org.webp' alt='' width={40} height={40} />} />
-                <span className='hidden print:inline mr-1'>, </span>
             </div>
         </section>
     )
