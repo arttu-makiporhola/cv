@@ -14,7 +14,7 @@ export default function ProjectsCard() {
             <div className='flex flex-col mt-10 print:mt-0 gap-10'>
                 <div className='print:border-b-1 break-inside-avoid'>
                     <GitHubRepoItem
-                        lastUpdated={new Date('Feb 28, 2022')}
+                        lastUpdated={new Date('Jan 24, 2025')}
                         title="arttu-makiporhola/podcast-auto-clean-cli"
                         url="https://github.com/arttu-makiporhola/podcast-auto-clean-cli"
                         license="MIT License"
@@ -33,7 +33,7 @@ export default function ProjectsCard() {
                 </div>
                 <div className='print:border-b-1 break-inside-avoid'>
                     <GitHubRepoItem
-                        lastUpdated={new Date('Feb 28, 2022')}
+                        lastUpdated={new Date('Jan 24, 2025')}
                         title="arttu-makiporhola/game"
                         url="https://github.com/arttu-makiporhola/game"
                         license="MIT License"
@@ -83,7 +83,7 @@ export default function ProjectsCard() {
                 </div>
                 <div className='break-inside-avoid'>
                     <GitHubRepoItem
-                        lastUpdated={new Date('Oct 3, 2023')}
+                        lastUpdated={new Date('Jan 24, 2025')}
                         title="arttu-makiporhola/cv"
                         url="https://github.com/arttu-makiporhola/cv"
                         license="MIT License"
