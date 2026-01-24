@@ -1,48 +1,48 @@
 {
-  "name": "cv",
-  "version": "1.0.2",
-  "private": true,
-  "description": "A simple CV / Online Resume built with Next.js, TypeScript, and Tailwind CSS.",
-  "keywords": [
-    "portfolio",
-    "next.js",
-    "react",
-    "typescript",
-    "tailwind",
-    "multilingual",
-    "theme toggle",
-    "dark mode",
-    "static site",
-    "web development",
-    "cv"
-  ],
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
-    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,md}\""
-  },
-  "dependencies": {
-    "@sparkjsdev/spark": "^0.1.10",
-    "lucide-react": "^0.562.0",
-    "next": "16.1.1",
-    "react": "19.2.3",
-    "react-dom": "19.2.3",
-    "three": "^0.182.0"
-  },
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@types/three": "^0.182.0",
-    "eslint": "^9",
-    "eslint-config-next": "16.1.1",
-    "prettier": "^3.7.4",
-    "tailwindcss": "^4",
-    "terser": "^5.44.1",
-    "typescript": "^5"
-  }
+    "name": "cv",
+    "version": "1.0.2",
+    "private": true,
+    "description": "A simple CV / Online Resume built with Next.js, TypeScript, and Tailwind CSS.",
+    "keywords": [
+        "portfolio",
+        "next.js",
+        "react",
+        "typescript",
+        "tailwind",
+        "multilingual",
+        "theme toggle",
+        "dark mode",
+        "static site",
+        "web development",
+        "cv"
+    ],
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "eslint",
+        "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
+        "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,md}\""
+    },
+    "dependencies": {
+        "@sparkjsdev/spark": "^0.1.10",
+        "lucide-react": "^0.562.0",
+        "next": "16.1.1",
+        "react": "19.2.3",
+        "react-dom": "19.2.3",
+        "three": "^0.182.0"
+    },
+    "devDependencies": {
+        "@tailwindcss/postcss": "^4",
+        "@types/node": "^20",
+        "@types/react": "^19",
+        "@types/react-dom": "^19",
+        "@types/three": "^0.182.0",
+        "eslint": "^9",
+        "eslint-config-next": "16.1.1",
+        "prettier": "^3.7.4",
+        "tailwindcss": "^4",
+        "terser": "^5.44.1",
+        "typescript": "^5"
+    }
 }

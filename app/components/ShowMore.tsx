@@ -1,24 +1,19 @@
-import { useState } from 'react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useState } from 'react'
+import { useLanguage } from '../contexts/LanguageContext'
 
 interface ShowMoreProps {
-    text?: string;
-    textOpen?: string;
-    className?: string;
-    children?: React.ReactNode;
+    text?: string
+    textOpen?: string
+    className?: string
+    children?: React.ReactNode
 }
 
-export default function ShowMore({
-    text,
-    textOpen,
-    className = 'print:hidden',
-    children,
-}: ShowMoreProps) {
-    const { t } = useLanguage();
-    const [isOpen, setIsOpen] = useState(false);
+export default function ShowMore({ text, textOpen, className = 'print:hidden', children }: ShowMoreProps) {
+    const { t } = useLanguage()
+    const [isOpen, setIsOpen] = useState(false)
 
-    let displayText     = text || t('components.ShowMore.showMore');
-    let displayOpenText = textOpen || t('components.ShowMore.showLess');
+    let displayText = text || t('components.ShowMore.showMore')
+    let displayOpenText = textOpen || t('components.ShowMore.showLess')
     return (
         <div className={className}>
             {isOpen && children}
@@ -26,5 +21,5 @@ export default function ShowMore({
                 {!isOpen ? displayText : displayOpenText}
             </button>
         </div>
-    );
+    )
 }
