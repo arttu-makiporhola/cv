@@ -15,7 +15,7 @@ function ThemeToggle() {
 
   useEffect(() => {
     // Sync state with data attribute that was set by blocking script
-    const attr = document.documentElement.getAttribute('data-theme');
+    const attr = localStorage.getItem('theme') || document.documentElement.getAttribute('data-theme');
     setTheme(attr === 'light' ? 'light' : 'dark');
   }, []);
 
