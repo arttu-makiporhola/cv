@@ -1,6 +1,6 @@
 {
     "name": "cv",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "private": true,
     "description": "A simple CV / Online Resume built with Next.js and hosted on Github Pages.",
     "keywords": [
