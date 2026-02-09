@@ -58,9 +58,6 @@ export const metadata: Metadata = {
             'max-snippet': -1,
         },
     },
-    verification: {
-        // google: 'your-google-verification-code',
-    },
 }
 
 export default function RootLayout({
@@ -72,6 +69,7 @@ export default function RootLayout({
         <html lang='en' suppressHydrationWarning>
             <head>
                 <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+                <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(siteConfig.schema) }} />
             </head>
             <body>
                 <LanguageProvider>{children}</LanguageProvider>
