@@ -8,7 +8,7 @@ export default function HistoryCard() {
 
     return (
         <section className='flex flex-col mb-10 break-inside-avoid'>
-            <p className='text-3xl font-bold min-h-10'>{t('historyCard.title')}</p>
+            <h2 className='text-3xl font-bold min-h-10'>{t('historyCard.title')}</h2>
             <div className='flex flex-col'>
                 <HistoryCardItem
                     title='Hion Digital Oy'

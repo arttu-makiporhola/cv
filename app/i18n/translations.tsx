@@ -21,7 +21,7 @@ export const translations: Record<Language, Translations> = {
         profileCard: {
             text: (
                 <div>
-                    <p className='text-4xl font-bold'>Hi</p>
+                    <h1 className='text-4xl font-bold'>Hi</h1>
                     <p>I'm a long-time (10-y) Full-stack developer. Nowadays, I'm more on the DevOps & infra side.</p>
                     <br />
                     <p>The thing I enjoy most, is integrating many systems to work together seamlessly, I'd compare it to fitting together a puzzle where you sometimes have to fix a couple pieces.</p>
@@ -189,7 +189,7 @@ export const translations: Record<Language, Translations> = {
         profileCard: {
             text: (
                 <div>
-                    <p className='text-4xl font-bold'>Moi</p>
+                    <h1 className='text-4xl font-bold'>Moi</h1>
                     <p>Oon pitkän uran (10-v) Full-stack-kehittäjä. Nykyään enemmän DevOps- ja infra-puolella.</p>
                     <br />
                     <p>Eniten tykkään siitä, kun eri järjestelmät saadaan toimimaan saumattomasti yhdessä. Vertaisin sitä palapeliin jossa välillä joutuu fiksaan pari palaa.</p>

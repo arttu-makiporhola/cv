@@ -70,62 +70,62 @@ export function HionDigitalIcon() {
 export function GeniemIcon() {
     return (
         <svg className='h-full max-w-full' viewBox='0 0 207 55' version='1.1' xmlns='http://www.w3.org/2000/svg'>
-            <g id='Canvas' transform='translate(2314 -62)'>
-                <g id='Group'>
-                    <g id='Group'>
-                        <g id='Group'>
-                            <g id='Vector'>
+            <g transform='translate(2314 -62)'>
+                <g>
+                    <g>
+                        <g>
+                            <g>
                                 <use href='#path0_fill' transform='translate(-2314 71.8842)' fill='#780076' />
                             </g>
-                            <g id='Vector'>
+                            <g>
                                 <use href='#path1_fill' transform='translate(-2234.33 62)' fill='#780076' />
                             </g>
-                            <g id='Vector'>
+                            <g>
                                 <use href='#path2_fill' transform='translate(-2157.74 65.3227)' fill='#780076' />
                             </g>
-                            <g id='Vector'>
+                            <g>
                                 <use href='#path3_fill' transform='translate(-2146.64 63.0594)' fill='#780076' />
                             </g>
                         </g>
-                        <g id='Group'>
-                            <g id='Vector'>
+                        <g>
+                            <g>
                                 <use href='#path4_fill' transform='translate(-2157.74 65.3227)' fill='#EA5353' />
                             </g>
-                            <g id='Vector'>
+                            <g>
                                 <use href='#path3_fill' transform='translate(-2146.64 63.0594)' fill='#EA5353' />
                             </g>
                         </g>
-                        <g id='Vector'>
+                        <g>
                             <use href='#path5_fill' transform='translate(-2130.92 65.3227)' fill='#EA5353' />
                         </g>
-                        <g id='Vector'>
+                        <g>
                             <use href='#path6_fill' transform='translate(-2130.92 82.803)' fill='#EA5353' />
                         </g>
-                        <g id='Vector'>
+                        <g>
                             <use href='#path7_fill' transform='translate(-2146.64 63.0594)' fill='#EA5353' />
                         </g>
-                        <g id='Vector'>
+                        <g>
                             <use href='#path8_fill' transform='translate(-2153.4 71.4866)' fill='#EA5353' />
                         </g>
-                        <g id='Vector'>
+                        <g>
                             <use href='#path9_fill' transform='translate(-2157.74 65.3227)' fill='#E86468' />
                         </g>
-                        <g id='Vector'>
+                        <g>
                             <use href='#path10_fill' transform='translate(-2132.95 65.3227)' fill='#E86468' />
                         </g>
-                        <g id='Vector'>
+                        <g>
                             <use href='#path11_fill' transform='translate(-2150.17 82.803)' fill='#E86468' />
                         </g>
-                        <g id='Vector'>
+                        <g>
                             <use href='#path12_fill' transform='translate(-2139.89 63.0594)' fill='#E86468' />
                         </g>
-                        <g id='Vector'>
+                        <g>
                             <use href='#path13_fill' transform='translate(-2146.64 63.0594)' fill='#E48986' />
                         </g>
-                        <g id='Vector'>
+                        <g>
                             <use href='#path14_fill' transform='translate(-2147.61 71.5347)' fill='#E48986' />
                         </g>
-                        <g id='Vector'>
+                        <g>
                             <use href='#path15_fill' transform='translate(-2139.51 71.5347)' fill='#EA5353' />
                         </g>
                     </g>

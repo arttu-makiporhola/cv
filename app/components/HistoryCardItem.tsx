@@ -33,7 +33,7 @@ const HistoryCardItem: React.FC<HistoryCardItemProps> = ({ url, logo, title, pos
 
             {moreInfo && <div className='mt-2'>{moreInfo}</div>}
 
-            <span className='max-w-full mt-5 ml-auto sm:absolute sm:right-5 sm:top-5 sm:ml-0 sm:mt-0'>{logo}</span>
+            <div className='max-w-full mt-5 ml-auto sm:absolute sm:right-5 sm:top-5 sm:ml-0 sm:mt-0'>{logo}</div>
         </div>
     )
 }

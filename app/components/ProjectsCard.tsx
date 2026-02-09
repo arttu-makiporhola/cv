@@ -8,7 +8,7 @@ export default function ProjectsCard() {
     return (
         <section className='flex flex-col'>
             <div className='break-inside-avoid'>
-                <p className='text-3xl font-bold mb-5 min-h-10'>{t('projectsCard.title')}</p>
+                <h2 className='text-3xl font-bold mb-5 min-h-10'>{t('projectsCard.title')}</h2>
                 <p className='min-h-20 print:min-h-auto print:mb-5'>{t('projectsCard.description')}</p>
             </div>
             <div className='flex flex-col mt-10 print:mt-0 gap-10'>

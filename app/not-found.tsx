@@ -5,7 +5,7 @@ import ThemeToggle from './components/ThemeToggle'
 export default function NotFound() {
     return (
         <div>
-            <header role='banner' className='z-40 flex flex-col md:flex-row justify-end fixed top-2 right-2 gap-4 md:gap-2'>
+            <header className='z-40 flex flex-col md:flex-row justify-end fixed top-2 right-2 gap-4 md:gap-2'>
                 <ThemeToggle />
             </header>
 
