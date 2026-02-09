@@ -44,7 +44,7 @@ export const siteConfig = {
                 '@id': `${fullUrl}/#person`,
                 name: 'Arttu Mäkipörhölä',
                 url: `${fullUrl}/`,
-                image: `${fullUrl}/picture.webp`,
+                image: `${fullUrl}/photo.webp`,
                 jobTitle: 'Developer',
                 description: "I'm a long-time (10-y) Full-stack developer. Nowadays, I'm more on the DevOps & infra side.",
                 hasOccupation: {
