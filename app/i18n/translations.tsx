@@ -11,6 +11,8 @@ export const translations: Record<Language, Translations> = {
         actions: {
             toggleTheme: 'Toggle theme',
             switchToFinnish: 'Vaihda suomeksi',
+            print: 'Print / Save as PDF',
+            share: 'Share',
         },
         components: {
             ShowMore: {
@@ -178,7 +180,9 @@ export const translations: Record<Language, Translations> = {
     fi: {
         actions: {
             toggleTheme: 'Vaihda teemaa',
-            switchToFinnish: 'Vaihda englanniksi',
+            switchToFinnish: 'Switch to english',
+            print: 'Tulosta / Tallenna PDF:ksi',
+            share: 'Jaa',
         },
         components: {
             ShowMore: {
