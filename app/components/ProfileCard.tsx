@@ -91,8 +91,6 @@ export default function ProfileCard() {
                 <span className='hidden print:inline mr-1'>, </span>
                 <BrandCard title='Vue' href='https://vuejs.org/' foreground='#fff' background='#0D1B1E' icon={<Image title='Vue logo' src='brands/vue.webp' alt='' width={40} height={40} />} />
                 <span className='hidden print:inline mr-1'>, </span>
-                <BrandCard title='Tailwind CSS' href='https://tailwindcss.com/' foreground='#fff' background='#0B1120' icon={<Image title='Tailwind CSS logo' src='brands/tailwindcss.com.webp' alt='' width={40} height={40} />} />
-                <span className='hidden print:inline mr-1'>, </span>
                 <BrandCard title='Electron' href='https://www.electronjs.org/' foreground='#fff' background='#0F172A' icon={<Image title='Electron logo' src='brands/electronjs.org.webp' alt='' width={40} height={40} />} />
                 <span className='hidden print:inline mr-1'>, </span>
                 <BrandCard title='Webpack' href='https://webpack.js.org/' foreground='#fff' background='#1C78C0' icon={<Image title='Webpack logo' src='brands/webpack.js.org.webp' alt='' width={40} height={40} />} />
