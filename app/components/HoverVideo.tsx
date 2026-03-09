@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
+import { PlayCircleIcon } from './icons'
 
 interface HoverVideoProps {
     posterSrc: string
@@ -109,6 +110,14 @@ export default function HoverVideo({ posterSrc, videoSrc, alt = '', className = 
             )}
 
             <div className='absolute w-full h-full top-0 hover:inset-shadow-md' />
+
+            <div
+                className='absolute bottom-1 right-1 w-10 h-10 text-black opacity-1 transition-opacity'
+                style={{
+                    opacity: isPlaying ? 0 : 1,
+                }}>
+                <PlayCircleIcon />
+            </div>
         </div>
     )
 }
