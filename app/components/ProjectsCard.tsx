@@ -6,12 +6,27 @@ export default function ProjectsCard() {
     const { t } = useLanguage()
 
     return (
-        <section className='flex flex-col'>
+        <section id='projects' className='flex flex-col break-inside-avoid'>
             <div className='break-inside-avoid'>
                 <h2 className='text-3xl font-bold mb-5 min-h-10'>{t('projectsCard.title')}</h2>
                 <p className='min-h-20 print:min-h-auto print:mb-5'>{t('projectsCard.description')}</p>
             </div>
             <div className='flex flex-col mt-10 print:mt-0 gap-10'>
+                <div className='print:border-b-1 break-inside-avoid'>
+                    <GitHubRepoItem
+                        lastUpdated={new Date(process.env.NEXT_PUBLIC_BUILD_TIME || '')}
+                        title='arttu-makiporhola/cv'
+                        url='https://github.com/arttu-makiporhola/cv'
+                        license='MIT License'
+                        languages={[
+                            {
+                                name: 'TypeScript',
+                                color: '#3178c6',
+                            },
+                        ]}
+                        siteDescription={<div className='min-h-20 print:min-h-auto print:mb-5'>{t('projectsCard.projectRepos.cv.siteDescription')}</div>}
+                    />
+                </div>
                 <div className='print:border-b-1 break-inside-avoid'>
                     <GitHubRepoItem
                         lastUpdated={new Date('Jan 24, 2025')}
@@ -43,7 +58,7 @@ export default function ProjectsCard() {
                         siteBanner={<HoverVideo posterSrc='game-banner-frame-0.webp' videoSrc='game-banner.webm' alt='Game Banner' className='h-full' />}
                     />
                 </div>
-                <div className='print:border-b-1 break-inside-avoid'>
+                <div className='break-inside-avoid'>
                     <GitHubRepoItem
                         lastUpdated={new Date('Oct 3, 2023')}
                         title='devgeniem/dustpress-debugger'
@@ -59,22 +74,7 @@ export default function ProjectsCard() {
                                 color: '#f1e05a',
                             },
                         ]}
-                        siteDescription={<div className='min-h-20 print:min-h-auto print:mb-5'>{t('projectsCard.projectRepos.dustpressDebugger.siteDescription')}</div>}
-                    />
-                </div>
-                <div className='break-inside-avoid'>
-                    <GitHubRepoItem
-                        lastUpdated={new Date(process.env.NEXT_PUBLIC_BUILD_TIME || '')}
-                        title='arttu-makiporhola/cv'
-                        url='https://github.com/arttu-makiporhola/cv'
-                        license='MIT License'
-                        languages={[
-                            {
-                                name: 'TypeScript',
-                                color: '#3178c6',
-                            },
-                        ]}
-                        siteDescription={<div className='min-h-20 print:min-h-auto'>{t('projectsCard.projectRepos.cv.siteDescription')}</div>}
+                        siteDescription={<div className='min-h-20 print:min-h-auto'>{t('projectsCard.projectRepos.dustpressDebugger.siteDescription')}</div>}
                     />
                 </div>
             </div>

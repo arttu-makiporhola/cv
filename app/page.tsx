@@ -4,6 +4,7 @@ import ThemeToggle from './components/ThemeToggle'
 import LanguageToggle from './components/LanguageToggle'
 import PrintButton from './components/PrintButton'
 import ProfileCard from './components/ProfileCard'
+import SkillsCard from './components/SkillsCard'
 import HistoryCard from './components/HistoryCard'
 import ProjectsCard from './components/ProjectsCard'
 import ShareButton from './components/ShareButton'
@@ -24,6 +25,7 @@ export default function Home() {
                 <div className='flex flex-col h-full items-center justify-center'>
                     <div className='flex flex-col max-w-full md:max-w-160 w-full'>
                         <ProfileCard />
+                        <SkillsCard />
                         <HistoryCard />
                         <ProjectsCard />
                     </div>

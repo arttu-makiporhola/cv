@@ -26,24 +26,54 @@ export const translations: Record<Language, Translations> = {
                     <h1 className='text-4xl font-bold'>Hi</h1>
                     <p>I'm a long-time (10-y) Full-stack developer. Nowadays, I'm more on the DevOps & infra side.</p>
                     <br />
-                    <p>The thing I enjoy most, is integrating many systems to work together seamlessly, I'd compare it to fitting together a puzzle where you sometimes have to fix a couple pieces.</p>
+                    <p>The thing I enjoy most, is integrating many systems to work together seamlessly. I'd compare it to fitting together a puzzle where you sometimes have to fix a couple pieces.</p>
                     <br />
-                    <p>I've been told that im very "smooth" to work with, my aim is always to make everything "simpler" for everyone involved, so that made me quite glad.</p>
+                    <p>I've been told that I'm very "smooth" to work with, my aim is always to make everything "simpler" for everyone involved, so that made me quite glad.</p>
                 </div>
             ),
-            footer: "A short list of things I've liked using and/or integrating together:",
+        },
+        skillsCard: {
+            header: 'Skills',
+            groups: {
+                cloudInfrastructure: 'Cloud & Infrastructure',
+                backendDatabases: 'Backend & Databases',
+                frontendDesign: 'Frontend & Design',
+                toolingDevelopment: 'Tooling & Development',
+                cmsContentSystems: 'CMS & Content Systems',
+                conceptsMethodologies: 'Concepts & Methodologies',
+            },
         },
         historyCard: {
             title: 'History',
+            present: 'Present',
             hionDigital: (
                 <div>
-                    <p>
-                        During my time at Hion I've stepped into more of a DevOps role, from creating and managing{' '}
-                        <a href='https://s-ryhma.fi/' target='_blank' rel='noreferrer'>
-                            SOK
-                        </a>
-                        's at the time WordPress AWS infra, migrating multiple existing projects to Google Cloud, to optimizing Google Cloud solutions and automating them via Terraform.
-                    </p>
+                    <ul className='list-disc pl-5'>
+                        <li>
+                            <b>Cloud Architecture & Infrastructure as Code (IaC)</b>: Co-designed and solely managed the AWS infrastructure for SOK across 5 projects and ~30 regional cooperative store sites, utilizing stelligent/mu for CloudFormation deployment. Designed a new GCP architecture using Terraform (Cloud Run, Cloud SQL, Memorystore/Redis) to replace manual processes.
+                        </li>
+                        <li>
+                            <b>Massive Infrastructure Provisioning</b>: Architected and provisioned Google Cloud infrastructures for numerous prominent Finnish organizations, including R-Kioski (ärrä.fi), Finnish Red Cross Blood Service (veripalvelu.fi), Uniarts (uniarts.fi), SDP (sdp.fi), Vesivek (vesivek.fi), Laatumaa (laatumaa.fi), and several city/municipal portals (Vaasa, Kokkola, Lahti Museums).
+                        </li>
+                        <li>
+                            <b>Headless CMS & Large-Scale Migrations</b>: Executed a complex migration of over 30 SOK sites into Contentful, engineering a custom parsing solution to transform and retain all original HTML styling within the new Contentful schema. Managed the AWS infrastructure for headless applications utilizing React frontends paired with GraphQL-powered WordPress backends.
+                        </li>
+                        <li>
+                            <b>Technical Leadership & Mentoring</b>: Acted as Lead Developer and Architect for multiple projects, including yhkodit.fi, driving technical planning, code-level execution, and developer mentoring. Mentored peers on cloud setups (e.g., Suomen Yrittäjät).
+                        </li>
+                        <li>
+                            <b>Performance Optimization & Security</b>: Spearheaded company-wide security best practices. Routinely debugged and optimized backend performance utilizing Xdebug and Webgrind/Cachegrind.
+                        </li>
+                        <li>
+                            <b>Modern WordPress & Backend Features</b>: Built fully custom WordPress applications using Blade themes and DustPress. Implemented advanced search capabilities using RediSearch and maintained internal core plugins.
+                        </li>
+                        <li>
+                            <b>Advanced Integrations & SSO</b>: Architected automated data synchronization pipelines bridging WordPress with external CRMs, ERPs, and APIs. Engineered complex Single Sign-On (SSO) authentication flows integrating Azure and GCP with Keycloak.
+                        </li>
+                        <li>
+                            <b>AI-Assisted Developer Productivity</b>: Championed the adoption of LLM-assisted engineering workflows for debugging, code generation and code review. Advocated for and helped establish self-hosted local LLM infrastructure for internal use, significantly reducing API costs.
+                        </li>
+                    </ul>
                     <p className='text-stone-500 mt-5 text-xs'>
                         * Geniem Oy was acquired by{' '}
                         <a href='https://www.saaripartners.fi' target='_blank' rel='noreferrer'>
@@ -54,18 +84,31 @@ export const translations: Record<Language, Translations> = {
                 </div>
             ),
             geniem: (
-                <p className='mb-5'>
-                    During my time at Geniem I was mostly involved with WordPress sites in various different environments, these sites had anything from stores to livestream functionality, but there were some React apps like{' '}
-                    <a href='https://www.buildie.fi/' target='_blank' rel='noreferrer'>
-                        Buildie
-                    </a>{' '}
-                    too, I was also the main person doing linux compatibility for our internal tools and containers. I enjoyed working with various API's at the time most to create different kinds of integrations.
-                </p>
+                <ul className='list-disc pl-5 mb-5'>
+                    <li>
+                        <b>Infrastructure & Monorepo Management</b>: Co-led DigitalOcean infrastructure management and custom Docker image development company-wide. Solely managed a Kubernetes environment for the salibandyliiga.fi and salibandyliitto.fi monorepo, and managed the tuni.fi monorepo deploying 5 distinct multisite projects from a single shared codebase.
+                    </li>
+                    <li>
+                        <b>Automated Testing & Alerting Pipelines</b>: Implemented automated monitoring for critical features using Pingdom, Selenium & Testingbot, configuring custom Slack webhooks for detailed error telemetry. Built automated End-to-End (E2E) testing pipelines that captured test execution videos, recorded precise failure timestamps, and triggered rich Slack alerts.
+                    </li>
+                    <li>
+                        <b>Complex API & Payment Integrations</b>: Built robust API integrations from scratch without relying on off-the-shelf plugins, including native OAuth implementations for social media (Facebook, Instagram, Twitter).
+                    </li>
+                    <li>
+                        <b>E-Commerce Booking Systems</b>: Delivered a comprehensive e-commerce system for vierumaki.fi integrated with the Verifone API, featuring custom recurring payment functionalities.
+                    </li>
+                    <li>
+                        <b>Local Development & Containerization</b>: Owned internal Linux compatibility and local development tooling. Built customized Docker/Docker Compose environments containing Nginx (with PageSpeed) and PHP-FPM in a single container, alongside a custom local HTTPS management tool.
+                    </li>
+                    <li>
+                        <b>Full-Stack & Diverse Environments</b>: Contributed frontend UI features to the Buildie (React & TypeScript) application and built Vue.js Single Page Applications (SPAs). Managed legacy environments using Heroku and Vagrant, and utilized MongoDB for backend data management.
+                    </li>
+                </ul>
             ),
         },
         projectsCard: {
             title: 'Projects',
-            description: 'Most of my personal projects arent really in a "presentable" state yet, and most of my actual work on GitHub is for private repositories so there isnt much content showable there, but these are some that are at a good enough point to show, but still at various states of development:',
+            description: "Because I've spent the last 10 years building enterprise systems, most of my actual codebase is in private repositories. However, I actively build personal projects to explore new languages (like Rust), test local LLM setups, and solve my own daily workflow problems. Here are a few  repositories that highlight what I enjoy building off the clock.",
             git: {
                 public: 'Public',
                 updatedOn: 'Updated on',
@@ -78,7 +121,7 @@ export const translations: Record<Language, Translations> = {
                             <a href='https://kdenlive.org/' target='_blank' rel='noreferrer'>
                                 kdenlive
                             </a>{' '}
-                            project file that would allow you to just delete unnecessary sections in premade blocks, and then just export without any more work. All ai selections i made were based on active use, "foreseeable support", if is open source, and could be ran locally via docker
+                            project file that would allow you to just delete unnecessary sections in premade blocks, and then just export without any more work. All ai selections i made were based on active use, "foreseeable support", if is open source, and could be ran locally via docker.
                         </p>
                     ),
                 },
@@ -102,7 +145,7 @@ export const translations: Record<Language, Translations> = {
                             </a>
                             <ShowMore>
                                 <div>
-                                    <a href='https://godbone.gitlab.io/test' className='break-all' target='_blank' rel='noreferrer'>
+                                    <a href='https://godbone.gitlab.io/test' className='break-all print:hidden' target='_blank' rel='noreferrer'>
                                         https://godbone.gitlab.io/test
                                     </a>
                                     <div className='print:hidden'>
@@ -166,7 +209,11 @@ export const translations: Record<Language, Translations> = {
                 cv: {
                     siteDescription: (
                         <p>
-                            This current site. This is a minimal simple site to showcase stuff about me, its intended to be completely offline to minimize all possible costs, as such it's built via{' '}
+                            This current site, e.g.{' '}
+                            <a href='https://cv.a-m.fi' target='_blank' rel='noreferrer'>
+                                https://cv.a-m.fi
+                            </a>{' '}
+                            This is a minimal simple online CV, its intended to be completely offline to minimize all possible costs, as such it's built via{' '}
                             <a href='https://nextjs.org/' target='_blank' rel='noreferrer'>
                                 next.js
                             </a>
@@ -201,19 +248,49 @@ export const translations: Record<Language, Translations> = {
                     <p>Mulle on sanottu että mun kanssa on ollut todella "sujuva" työskennellä. Koitan aina tehdä kaikesta mahdollisimman "yksinkertaista" kaikille osapuolille, joten se teki mut aika tyytyväiseks.</p>
                 </div>
             ),
-            footer: 'Lyhyt lista asioista, joita olen tykännyt käyttää ja/tai integroida toisiinsa:',
+        },
+        skillsCard: {
+            header: 'Taidot',
+            groups: {
+                cloudInfrastructure: 'Pilvipalvelut & infrastruktuuri',
+                backendDatabases: 'Taustajärjestelmät & tietokannat',
+                frontendDesign: 'Käyttöliittymät & suunnittelu',
+                toolingDevelopment: 'Työkalut & ohjelmistokehitys',
+                cmsContentSystems: 'Julkaisujärjestelmät & sisältöjärjestelmät',
+                conceptsMethodologies: 'Käsitteet & menetelmät',
+            },
         },
         historyCard: {
             title: 'Historia',
+            present: 'Jatkuu',
             hionDigital: (
                 <div>
-                    <p>
-                        Hionilla ollessani olen siirtynyt enemmän DevOps-rooliin: tein ja ylläpidin mm.{' '}
-                        <a href='https://s-ryhma.fi/' target='_blank' rel='noreferrer'>
-                            SOK
-                        </a>
-                        :in aikaisia WordPressin AWS-infrastruktuureja, migroin useita olemassa olevia projekteja Google Cloudiin, optimoin Google Cloud -ratkaisuja, ja automatisoin niitä Terraformilla.
-                    </p>
+                    <ul className='list-disc pl-5'>
+                        <li>
+                            <b>Pilviarkkitehtuuri & Infrastructure as Code (IaC)</b>: Suunnittelin yhdessä ja hallinnoin yksin SOK:n AWS-infrastruktuuria viidessä projektissa ja noin 30 alueellisen osuuskaupan sivustolla, hyödyntäen stelligent/mu:ta CloudFormation-julkaisuissa. Suunnittelin uuden GCP-arkkitehtuurin Terraformilla (Cloud Run, Cloud SQL, Memorystore/Redis) korvaamaan manuaalisia prosesseja.
+                        </li>
+                        <li>
+                            <b>Laajamittainen infrastruktuurin provisiointi</b>: Toimin arkkitehtina ja provisioin Google Cloud -infrastruktuurit lukuisille merkittäville suomalaisille organisaatioille, mukaan lukien R-Kioski (ärrä.fi), Suomen Punaisen Ristin Veripalvelu (veripalvelu.fi), Taideyliopisto (uniarts.fi), SDP (sdp.fi), Vesivek (vesivek.fi), Laatumaa (laatumaa.fi) sekä useita kaupunkien ja kuntien portaaleja (Vaasa, Kokkola, Lahden museot).
+                        </li>
+                        <li>
+                            <b>Headless CMS & laajamittaiset migraatiot</b>: Toteutin yli 30 SOK:n sivuston monimutkaisen migraation Contentfuliin. Kehitin räätälöidyn jäsennysratkaisun (parsing), joka muunsi ja säilytti kaikki alkuperäiset HTML-tyylit uudessa Contentful-skeemassa. Hallinnoin AWS-infrastruktuuria headless-sovelluksille, joissa hyödynnettiin React-käyttöliittymiä ja GraphQL-pohjaisia WordPress-taustajärjestelmiä.
+                        </li>
+                        <li>
+                            <b>Tekninen johtaminen & mentorointi</b>: Toimin pääkehittäjänä ja arkkitehtina useissa projekteissa (mm. yhkodit.fi), johtaen teknistä suunnittelua, kooditason toteutusta ja kehittäjien mentorointia. Mentoroin kollegoita pilviympäristöjen pystytyksessä (esim. Suomen Yrittäjät).
+                        </li>
+                        <li>
+                            <b>Suorituskyvyn optimointi & tietoturva</b>: Vedin yritystason tietoturvakäytäntöjen jalkauttamista. Tein rutiininomaisesti vianmääritystä ja optimoin taustajärjestelmien suorituskykyä hyödyntäen Xdebugia ja Webgrind/Cachegrindiä.
+                        </li>
+                        <li>
+                            <b>Moderni WordPress & taustajärjestelmäominaisuudet</b>: Rakensin täysin räätälöityjä WordPress-sovelluksia hyödyntäen Blade-teemoja ja DustPressiä. Toteutin edistyneitä hakuominaisuuksia RediSearchin avulla ja ylläpidin yrityksen sisäisiä ydinlisäosia.
+                        </li>
+                        <li>
+                            <b>Edistyneet integraatiot & SSO</b>: Suunnittelin automatisoituja tietojensynkronointiputkia, jotka yhdistivät WordPressin ulkoisiin CRM- ja ERP-järjestelmiin sekä API-rajapintoihin. Kehitin monimutkaisia Single Sign-On (SSO) -tunnistautumisvirtoja integroiden Azuren ja GCP:n Keycloakin kanssa.
+                        </li>
+                        <li>
+                            <b>Tekoälyavusteinen kehittäjien tuottavuus</b>: Edistin kielimalleihin (LLM) perustuvien työnkulkujen käyttöönottoa vianmäärityksessä, koodin luonnissa ja koodikatselmoinnissa. Puhuin itseylläpidetyn (self-hosted) paikallisen LLM-infrastruktuurin puolesta ja autoin sen pystyttämisessä sisäiseen käyttöön. Tämä laskee merkittävästi API-kustannuksia.
+                        </li>
+                    </ul>
                     <p className='text-stone-500 mt-5 text-xs'>
                         * Geniem Oy siirtyi osaksi{' '}
                         <a href='https://www.saaripartners.fi' target='_blank' rel='noreferrer'>
@@ -224,18 +301,31 @@ export const translations: Record<Language, Translations> = {
                 </div>
             ),
             geniem: (
-                <p className='mb-5'>
-                    Geniemillä ollessani olin pääosin tekemisissä WordPress-sivustojen kanssa erilaisissa ympäristöissä - näissä oli toimintoja kaupoista livestreameihin. Oli myös joitain React-appiksia, kuten{' '}
-                    <a href='https://www.buildie.fi/' target='_blank' rel='noreferrer'>
-                        Buildie
-                    </a>
-                    . Olin myös vastuussa sisäisten työkalujen ja konttien Linux-yhteensopivuudesta. Eniten näihin aikoihin tykkäsin tehdä erilaisia integraatioita API:en kanssa.
-                </p>
+                <ul className='list-disc pl-5 mb-5'>
+                    <li>
+                        <b>Infrastruktuurin & monorepon hallinta</b>: Johdin yhdessä DigitalOcean-infrastruktuurin hallintaa ja räätälöityjen Docker-kuvien kehitystä koko yrityksessä. Hallinnoin yksin Kubernetes-ympäristöä salibandyliiga.fi- ja salibandyliitto.fi-monorepolle sekä ylläpidin tuni.fi-monorepoa, josta julkaistiin viisi erillistä multisite-projektia yhdestä jaetusta koodikannasta.
+                    </li>
+                    <li>
+                        <b>Automatisoidut testaus- & hälytysputket</b>: Toteutin kriittisten ominaisuuksien automatisoidun valvonnan Pingdomilla, Seleniumilla ja Testingbotilla, konfiguroiden räätälöidyt Slack-webhookit yksityiskohtaista virhetelemetriaa varten. Rakensin automatisoituja End-to-End (E2E) -testausputkia, jotka tallensivat testien suorituksista videoita, kirjasivat tarkat epäonnistumisten aikaleimat ja laukaisivat monipuolisia Slack-hälytyksiä.
+                    </li>
+                    <li>
+                        <b>Monimutkaiset API- & maksuintegraatiot</b>: Rakensin vankkoja API-integraatioita alusta alkaen ilman valmiita lisäosia, mukaan lukien natiivit OAuth-toteutukset sosiaaliseen mediaan (Facebook, Instagram, Twitter).
+                    </li>
+                    <li>
+                        <b>Verkkokauppojen varausjärjestelmät</b>: Toimitin vierumaki.fi-sivustolle kattavan, Verifone API:in integroidun verkkokauppajärjestelmän, joka sisälsi räätälöityjä toiminnallisuuksia toistuviin maksuihin.
+                    </li>
+                    <li>
+                        <b>Paikallinen kehitys & kontitus</b>: Vastasin sisäisestä Linux-yhteensopivuudesta ja paikallisista kehitystyökaluista. Rakensin räätälöityjä Docker/Docker Compose -ympäristöjä, jotka sisälsivät Nginxin (PageSpeedillä) ja PHP-FPM:n yhdessä kontissa, sekä räätälöidyn paikallisen HTTPS-hallintatyökalun.
+                    </li>
+                    <li>
+                        <b>Full-Stack & moninaiset ympäristöt</b>: Osallistuin Buildie-sovelluksen (React & TypeScript) käyttöliittymäominaisuuksien kehittämiseen ja rakensin Vue.js Single Page -sovelluksia (SPA). Hallinnoin legacy-ympäristöjä Herokun ja Vagrantin avulla sekä hyödynsin MongoDB:tä taustajärjestelmän tiedonhallinnassa.
+                    </li>
+                </ul>
             ),
         },
         projectsCard: {
             title: 'Projektit',
-            description: 'Suurin osa omista projekteistani ei ole vielä "esittelykelpoisessa" kunnossa, ja suurin osa töistäni GitHubissa on yksityisissä repoissa, joten siellä ei ole paljoa näkyvillä. Tässä kuitenkin muutamia projekteja, jotka ovat riittävän valmiita esiteltäväksi, mutta kuitenkin erilaisissa vaiheissa kehitystä:',
+            description: 'Koska olen viimeiset 10 vuotta rakentanut laajoja yritysjärjestelmiä, suurin osa varsinaisesta koodistani sijaitsee yksityisissä repositorioissa. Teen kuitenkin aktiivisesti omia projekteja, joiden avulla opiskelen uusia kieliä (kuten Rustia), testaan lokaaleja LLM-ympäristöjä ja ratkon omia arjen haasteitani. Tässä on muutama repositorio, jotka antavat hyvän kuvan siitä, millaisten asioiden parissa viihdyn vapaa-ajallani.',
             git: {
                 public: 'Julkinen',
                 updatedOn: 'Päivitetty',
@@ -272,7 +362,7 @@ export const translations: Record<Language, Translations> = {
                             </a>
                             <ShowMore>
                                 <div>
-                                    <a href='https://godbone.gitlab.io/test' className='break-all' target='_blank' rel='noreferrer'>
+                                    <a href='https://godbone.gitlab.io/test' className='break-all print:hidden' target='_blank' rel='noreferrer'>
                                         https://godbone.gitlab.io/test
                                     </a>
                                     <div className='print:hidden'>
@@ -288,7 +378,7 @@ export const translations: Record<Language, Translations> = {
                                             </div>
                                             <div className='flex flex-col xs:flex-row border-b-1'>
                                                 <div className='flex-1'>Välilyönti</div>
-                                                <div className='pl-5'>Pienenny/Hypää</div>
+                                                <div className='pl-5'>Pienenny/Hyppää</div>
                                             </div>
                                             <div className='flex flex-col xs:flex-row border-b-1'>
                                                 <div className='flex-1'>R</div>
@@ -311,7 +401,7 @@ export const translations: Record<Language, Translations> = {
                                             </div>
                                             <div className='flex flex-col xs:flex-row border-b-1'>
                                                 <div className='flex-1'>Napauta & pidä oikeaa puolta</div>
-                                                <div className='pl-5'>Pienennä/Hypää</div>
+                                                <div className='pl-5'>Pienennä/Hyppää</div>
                                             </div>
                                         </div>
 
@@ -336,7 +426,11 @@ export const translations: Record<Language, Translations> = {
                 cv: {
                     siteDescription: (
                         <p>
-                            Tämä nykyinen sivusto. Se on minimalistinen esittelysivu, joka on tarkoitus pitää mahdollisimman offline-ystävällisenä kustannusten minimoimiseksi. Siksi se on rakennettu{' '}
+                            Tämä nykyinen sivusto, eli{' '}
+                            <a href='https://cv.a-m.fi' target='_blank' rel='noreferrer'>
+                                https://cv.a-m.fi
+                            </a>{' '}
+                            Tämä on minimalistinen online-CV, joka on tarkoitus pitää mahdollisimman offline-ystävällisenä kustannusten minimoimiseksi. Siksi se on rakennettu{' '}
                             <a href='https://nextjs.org/' target='_blank' rel='noreferrer'>
                                 Next.js
                             </a>

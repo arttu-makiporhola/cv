@@ -6,8 +6,7 @@ interface HistoryCardItemProps {
     logo: React.ReactNode
     title: string
     position?: string
-    period?: string
-    start?: Date
+    start: Date
     end?: Date
     moreInfo?: React.ReactNode | string
 }
@@ -16,19 +15,15 @@ const HistoryCardItem: React.FC<HistoryCardItemProps> = ({ url, logo, title, pos
     const { t } = useLanguage()
 
     return (
-        <div className='flex flex-col items-start mt-5 mb-5 border-1 rounded-md p-5 relative print:border-0 print:mb-0 print:p-0'>
-            <a href={url} target='_blank' rel='noreferrer'>
+        <div className='flex flex-col items-start mt-5 mb-5 border-1 rounded-md p-5 relative break-inside-avoid print:border-0 print:mb-0 print:p-0'>
+            <a href={url} target='_blank' rel='noreferrer' className='font-bold'>
                 {title}
             </a>
             <p>{position}</p>
             <p>
-                {start && <TimeText time={start} />}
-                {end && (
-                    <span>
-                        <span> - </span>
-                        <TimeText time={end} />
-                    </span>
-                )}
+                <TimeText time={start} />
+                <span> - </span>
+                <span>{end ? <TimeText time={end} /> : t('historyCard.present')}</span>
             </p>
 
             {moreInfo && <div className='mt-2'>{moreInfo}</div>}

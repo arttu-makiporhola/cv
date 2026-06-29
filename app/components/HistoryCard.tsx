@@ -7,7 +7,7 @@ export default function HistoryCard() {
     const { t } = useLanguage()
 
     return (
-        <section className='flex flex-col mb-10 break-inside-avoid'>
+        <section id='history' className='flex flex-col mb-10 break-inside-avoid'>
             <h2 className='text-3xl font-bold min-h-10'>{t('historyCard.title')}</h2>
             <div className='flex flex-col'>
                 <HistoryCardItem
@@ -21,10 +21,9 @@ export default function HistoryCard() {
                             </div>
                         </div>
                     }
-                    position='Developer / DevOps'
-                    period='0.0.0000'
+                    position='Cloud Architect / DevOps Engineer / Lead Developer'
                     start={new Date('2021-04-21')}
-                    moreInfo={<ShowMore>{t('historyCard.hionDigital')}</ShowMore>}
+                    moreInfo={<ShowMore showInPrint={true}>{t('historyCard.hionDigital')}</ShowMore>}
                 />
 
                 <hr className='hidden mt-5 print:block' />
@@ -40,11 +39,10 @@ export default function HistoryCard() {
                             </div>
                         </div>
                     }
-                    position='Developer'
-                    period='0.0.0000 - 0.0.0000'
+                    position='Full-Stack Developer / Systems Administrator'
                     start={new Date('2016-09-12')}
                     end={new Date('2021-04-21')}
-                    moreInfo={<ShowMore>{t('historyCard.geniem')}</ShowMore>}
+                    moreInfo={<ShowMore showInPrint={true}>{t('historyCard.geniem')}</ShowMore>}
                 />
             </div>
         </section>

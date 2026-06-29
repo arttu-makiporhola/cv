@@ -2,7 +2,9 @@
 
 ## Development
 
-Install [nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating) or the same node version as in the [.nvmrc](./.nvmrc) file
+### Using nvm/fnm or native node
+
+Install [nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)/[fnm](https://github.com/Schniz/fnm#installation), or the same node version as in the [.nvmrc](./.nvmrc) file
 
 ```bash
 # use projects node version
@@ -12,6 +14,17 @@ nvm use
 # install packages and start dev server
 npm ci
 npm run dev
+```
+
+Open [localhost:3000](http://localhost:3000)
+
+### Using devenv
+
+Setup [devenv](https://devenv.sh/getting-started/)
+
+```bash
+# start dev server (defined in devenv.nix)
+devenv up -d
 ```
 
 Open [localhost:3000](http://localhost:3000)

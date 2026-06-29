@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import './globals.css'
+import './globals.scss'
 import { LanguageProvider } from './contexts/LanguageContext'
 import { themeInitScript } from './scripts/theme-init'
 import { siteConfig } from './lib/config'
@@ -12,7 +12,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
     title: {
         default: siteConfig.metadata.title,
-        template: '%s | Arttu Mäkipörhölä - CV / Online Resume',
+        template: `%s | ${siteConfig.metadata.title}`,
     },
     description: siteConfig.metadata.description + ' (' + siteConfig.metadata.keywords.join(', ') + ')',
     keywords: siteConfig.metadata.keywords,
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         url: siteConfig.basePath || '/',
         title: siteConfig.metadata.title,
         description: siteConfig.metadata.description,
-        siteName: 'Arttu Mäkipörhölä - CV / Online Resume',
+        siteName: siteConfig.metadata.title,
         images: [
             {
                 url: siteConfig.metadata.ogImage.url,

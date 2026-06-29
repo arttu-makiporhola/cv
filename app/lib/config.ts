@@ -4,6 +4,7 @@
 const url = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
 const fullUrl = url + basePath
+const title = 'Arttu Mäkipörhölä - CV'
 
 export const siteConfig = {
     url,
@@ -14,7 +15,7 @@ export const siteConfig = {
     },
 
     metadata: {
-        title: 'Arttu Mäkipörhölä - CV / Online Resume',
+        title,
         description: 'A simple CV / Online Resume built with Next.js and hosted on Github Pages.',
         keywords: ['portfolio', 'next.js', 'react', 'typescript', 'tailwind', 'multilingual', 'theme toggle', 'dark mode', 'static site', 'web development', 'cv', 'resume'] as string[],
         author: 'Arttu Mäkipörhölä',
@@ -23,7 +24,7 @@ export const siteConfig = {
             url: '/og-image.webp',
             width: 1200,
             height: 630,
-            alt: 'Arttu Mäkipörhölä - CV / Online Resume',
+            alt: title,
         },
     },
 
@@ -34,7 +35,7 @@ export const siteConfig = {
                 '@type': 'WebSite',
                 '@id': `${fullUrl}/#website`,
                 url: `${fullUrl}/`,
-                name: 'Arttu Mäkipörhölä - CV / Online Resume',
+                name: title,
                 publisher: {
                     '@id': `${fullUrl}/#person`,
                 },
